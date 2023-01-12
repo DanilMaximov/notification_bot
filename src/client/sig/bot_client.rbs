@@ -1,4 +1,4 @@
-module AppName
+module BotClient
   class Applicaiton
     def self.call: -> nil
   end
