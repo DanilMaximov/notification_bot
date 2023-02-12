@@ -1,0 +1,29 @@
+{
+  "update_id": 997276333,
+  "message": {
+    "message_id": 1458,
+    "from": {
+      "id": 143845427,
+      "is_bot": false,
+      "first_name": "nerbyk",
+      "username": "nerby1",
+      "language_code": "en",
+      "is_premium": true
+    },
+    "chat": {
+      "id": 143845427,
+      "first_name": "nerbyk",
+      "username": "nerby1",
+      "type": "private"
+    },
+    "date": 1676214767,
+    "text": "/start",
+    "entities": [
+      {
+        "offset": 0,
+        "length": 6,
+        "type": "bot_command"
+      }
+    ]
+  }
+}
