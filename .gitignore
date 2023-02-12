@@ -1,9 +1,13 @@
 /.bundle/
 /vendor/
 
-gemfiles/*.lock
+*/gemfiles/*.lock
 
-Gemfile.lock
-Gemfile.local
-.ruby-version
+*/Gemfile.lock
+*/Gemfile.local
+*/.ruby-version
 *.gem
+*/.bundle
+
+.env
+
