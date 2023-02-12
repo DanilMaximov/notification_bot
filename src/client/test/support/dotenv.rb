@@ -1,3 +1,5 @@
-require 'dotenv'
+# frozen_string_literal: true
 
-Dotenv.load('.env.test')
+require "dotenv"
+
+Dotenv.load(".env.test")

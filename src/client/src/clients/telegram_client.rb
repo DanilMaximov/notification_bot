@@ -1,7 +1,8 @@
-
+# frozen_string_literal: true
 
 module TelegramClient
   class Error < StandardError; end
+
   class MissingTokenError < Error; end
 
   API_LINK = "https://api.telegram.org/bot"
@@ -11,7 +12,7 @@ module TelegramClient
   end
 
   def self.make_request(command, **options)
-    token = ENV['TELEGRAM_BOT_TOKEN'] || raise(MissingTokenError)
+    token = ENV["TELEGRAM_BOT_TOKEN"] || raise(MissingTokenError)
 
     url = API_LINK + token + command
 

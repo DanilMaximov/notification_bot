@@ -17,7 +17,7 @@ listener.start
 
 application = lambda do |env|
   req      = Rack::Request.new(env)
-  event    = { body: req.body.read }
+  event    = {body: req.body.read}
 
   response = BotClient::Application.handler(event: event, context: nil)
 

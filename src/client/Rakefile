@@ -58,4 +58,3 @@ task :package do
 end
 
 task default: %i[test rubocop steep]
-
