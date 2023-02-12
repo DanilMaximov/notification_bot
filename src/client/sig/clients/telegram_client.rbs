@@ -1,0 +1,38 @@
+module TelegramClient
+  class Error < StandardError
+  end
+
+  class MissingTokenError < Error
+  end
+  
+  type sendMessageResponse = {
+    ok: bool, 
+    result: {
+      message_id: Integer,
+      from: formType,
+      chat: chatType,
+      date: Integer,
+      text: String
+    }
+  }
+
+  type chatType = {
+    id: Integer,
+    first_name: String,
+    username: String,
+    type: String
+  }
+
+  type fromType = {
+    id: Integer,
+    is_bot: bool,
+    first_name: String,
+    username: String
+  }
+
+  API_LINK: "https://api.telegram.org/bot"
+
+  def self.send_message: (chat_id: Integer, text: String) -> sendMessageResponse
+
+  def self.make_request: (String command, **untyped options) -> untyped
+end

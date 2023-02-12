@@ -1,0 +1,13 @@
+class BaseFunction < ActiveFunction::Base
+  type permittedParams = Symbol | Array[Symbol]
+  
+  TG_PEMITTED_PARAMS: Array[permittedParams | Hash[Symbol, permittedParams]]
+
+  def set_message: -> ActiveFunction::hash
+
+  def chat_id: -> Integer
+  def user_first_name: -> String
+  def send_message: () -> TelegramClient::sendMessageResponse
+end
+
+

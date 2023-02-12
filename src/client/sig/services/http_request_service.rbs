@@ -1,0 +1,3 @@
+class HttpRequestService
+  def self.call: (String url, **untyped options) -> ::Net::HTTPResponse
+end

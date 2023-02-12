@@ -1,0 +1,8 @@
+nextify: |
+  ./src
+  --output=vendor
+  --min-version=2.7
+  --single-version
+  --edge
+  --transpile-mode=ast
+  --overwrite

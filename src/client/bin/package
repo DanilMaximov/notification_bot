@@ -1,8 +1,11 @@
 #!/bin/sh
 
 cd "$(dirname $0)"/..
-rm -rf vendor
-bundle check --path vendor/bundle > /dev/null 2>&1
+rm -rf vendor/*
+
+cp -R ./src ./vendor/
+bundle exec rake nextify
+
 bundle config set --local path 'vendor/bundle'
 bundle config set --local without 'development test'
 bundle install

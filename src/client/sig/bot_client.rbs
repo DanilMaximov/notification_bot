@@ -1,5 +1,8 @@
 module BotClient
-  class Applicaiton
-    def self.call: -> nil
+  class Application
+    type event = apiGatewayV2HTTPEvent # ActiveFunction sig/aws_events
+
+    def self.handler: (event: event, context: untyped) 
+      -> ActiveFunction::Functions::Response::responseHash
   end
 end
