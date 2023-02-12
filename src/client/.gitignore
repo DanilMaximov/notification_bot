@@ -11,3 +11,4 @@ Gemfile.local
 .env.development
 .env.local
 .env.test
+/.gem_rbs_collection/
