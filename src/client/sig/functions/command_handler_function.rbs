@@ -1,0 +1,3 @@
+class CommandHandlerFunction < BaseFunction
+  def start: () -> untyped
+end
